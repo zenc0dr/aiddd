@@ -1,0 +1,13 @@
+question_round_limit: 3
+end_conditions:
+  - glossary_defined
+  - acceptance_metrics_set
+  - happy_path_and_edge_cases
+  - constraints_fixed
+sanity_check_required: true
+memory_bank:
+  ttl_days_inferred: 14
+  archive_after_days: 60
+metrics:
+  enabled: true
+  path: metrics/history.csv
